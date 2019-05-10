@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mintrexo.iml" filepath="$PROJECT_DIR$/.idea/mintrexo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mintrexo.iml" filepath="$PROJECT_DIR$/.idea/Mintrexo.iml" />
     </modules>
   </component>
 </project>
