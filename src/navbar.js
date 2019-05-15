@@ -3,23 +3,47 @@ import {NavLink} from 'react-router-dom';
 
 function navbar(){
     return(
-        <div className='navbar'>
+        <div>
+            <div className='navbar'>
             <div className='navbarLogo'>
             </div>
             <ul className="navbarLinks">
-                <NavLink to="/home" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                <NavLink to="/" exact={'/'} style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
                     <li>Home</li>
                 </NavLink>
                 <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
                     <li>About</li>
                 </NavLink>
                 <NavLink to="/portfolio" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
-                <li>Portfolio</li>
+                     <li>Portfolio</li>
                 </NavLink>
-                <NavLink to="/content" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
-                <li>Content</li>
+                <NavLink to="/contact" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>Contact</li>
+                </NavLink>
+                <NavLink to="/blog" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>Blog</li>
                 </NavLink>
             </ul>
+            </div>
+
+            <ul className="navbarLinks2">
+                <NavLink to="/" exact={'/'}  style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>Home</li>
+                </NavLink>
+                <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>About</li>
+                </NavLink>
+                <NavLink to="/portfolio" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>Portfolio</li>
+                </NavLink>
+                <NavLink to="/contact" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>Contact</li>
+                </NavLink>
+                <NavLink to="/blog" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                    <li>Blog</li>
+                </NavLink>
+            </ul>
+
         </div>
     );
 }

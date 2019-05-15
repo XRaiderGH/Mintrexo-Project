@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+html {
+  height: 2950px;
+  width: 100vw;
+  background-color: black;
+  overflow-x: hidden; }
+
 body, html {
-  margin: 0; }
+  width: 100vw;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif; }
 
 h1 {
   color: white; }
@@ -44,5 +53,108 @@ li {
       text-decoration: none; }
     .navbarLinks li:hover {
       cursor: pointer; }
+
+.navbarLinks2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0;
+  margin-top: -0.5em; }
+
+.blackPageTransition {
+  background-image: url("./images/Rectangle 5.svg");
+  height: 20em;
+  width: 100vw;
+  margin-top: 13em;
+  position: relative; }
+
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90vw;
+  max-width: 750px;
+  text-align: center;
+  margin-top: 25vh; }
+  .headerSlogan {
+    color: #98FF98; }
+  .headerText {
+    font-size: 1.5em;
+    color: #FFF; }
+
+.arrowDown {
+  margin-top: -18em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: updown 1.5s;
+  animation-iteration-count: infinite; }
+  .arrowDown:hover {
+    cursor: pointer; }
+@keyframes updown {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(2em); }
+  100% {
+    transform: translateY(0); } }
+.services {
+  margin-top: 15em; }
+  .servicesTitle {
+    text-align: center;
+    color: #98FF98;
+    margin-bottom: 3em; }
+  .servicesGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-row-gap: 5em; }
+    .servicesGridItems {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+
+.planning {
+  background: url("images/Rectangle8.svg"), url("images/Image1.png");
+  height: 1080px;
+  margin-top: 25em;
+  color: white; }
+  .planningTitle h1 {
+    color: #98FF98;
+    text-align: center; }
+  .planningGrid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .planningGridItem {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      margin-bottom: 5em;
+      text-align: center; }
+      .planningGridItem svg {
+        float: right;
+        justify-self: center; }
+
+@media screen and (max-width: 375px) {
+  .navbarLogo {
+    background-image: url("./images/logo.png");
+    background-position: center top;
+    background-size: 15em; }
+
+  .navbarLinks {
+    display: none; }
+
+  .blackPageTransition {
+    margin-top: 2em; }
+
+  .header {
+    margin-top: 15vh; } }
+@media screen and (min-width: 376px) {
+  .navbarLinks2 {
+    display: none; } }
 
 /*# sourceMappingURL=App.css.map */
