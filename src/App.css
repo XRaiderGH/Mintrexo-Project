@@ -1,14 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 html {
-  height: 2950px;
   width: 100vw;
   background-color: black;
   overflow-x: hidden; }
 
 body, html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   width: 100vw;
   margin: 0;
   font-family: 'Quicksand', sans-serif; }
+
+#anchor1 {
+  margin-top: 5em;
+  opacity: 0; }
+
+#anchor2 {
+  transform: translateY(12em);
+  opacity: 0; }
 
 h1 {
   color: white; }
@@ -22,7 +31,7 @@ li {
 
 .wrapper1 {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: url("./images/background.svg") no-repeat, url("./images/backgroundimage.svg") no-repeat;
   background-size: cover; }
 
@@ -83,6 +92,7 @@ li {
     color: #FFF; }
 
 .arrowDown {
+  padding: 10px;
   margin-top: -18em;
   display: block;
   margin-left: auto;
@@ -90,6 +100,23 @@ li {
   animation: updown 1.5s;
   animation-iteration-count: infinite; }
   .arrowDown:hover {
+    cursor: pointer; }
+@keyframes updown {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(2em); }
+  100% {
+    transform: translateY(0); } }
+.arrowDown2 {
+  margin-top: 7em;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: updown 1.5s;
+  animation-iteration-count: infinite; }
+  .arrowDown2:hover {
     cursor: pointer; }
 @keyframes updown {
   0% {
@@ -117,7 +144,8 @@ li {
 
 .planning {
   background: url("images/Rectangle8.svg"), url("images/Image1.png");
-  height: 1080px;
+  background-size: cover;
+  height: auto;
   margin-top: 25em;
   color: white; }
   .planningTitle h1 {
@@ -126,22 +154,32 @@ li {
   .planningGrid {
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 50vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    flex-direction: column; }
     .planningGridItem {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      margin-bottom: 5em;
-      text-align: center; }
+      display: flex;
+      margin-bottom: 5em; }
+      .planningGridItem .planningContent {
+        width: 70%; }
       .planningGridItem svg {
-        float: right;
-        justify-self: center; }
+        width: 30%; }
+
+.footer {
+  height: 6em;
+  bottom: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  .footerLogo {
+    flex-grow: 0.8; }
+  .footerlinks {
+    margin-top: 1em;
+    text-align: center; }
 
 @media screen and (max-width: 375px) {
   .navbarLogo {
-    background-image: url("./images/logo.png");
+    background-image: url("images/logo.png");
     background-position: center top;
     background-size: 15em; }
 
@@ -153,6 +191,28 @@ li {
 
   .header {
     margin-top: 15vh; } }
+@media screen and (max-width: 768px) {
+  .planningTitle {
+    margin-bottom: 5em; }
+
+  .planningGridItem {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; }
+
+  .planningContent {
+    margin-left: auto;
+    margin-right: auto;
+    order: 2; }
+
+  .planningGridItem svg {
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+    width: 123px; }
+
+  .planningGrid {
+    width: 90vw; } }
 @media screen and (min-width: 376px) {
   .navbarLinks2 {
     display: none; } }
