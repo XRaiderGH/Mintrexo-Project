@@ -11,14 +11,14 @@ function header(){
 
             <div className="blackPageTransition">.</div>
 
-            <a href="#anchor1"><svg className='arrowDown' width="43px" height="53px">
+            <a href="#services"><svg className='arrowDown' width="43px" height="53px">
                 <g id="scroll-arrow-to-down" transform="translate(-22 -37)">
                     <path id="Path_2" data-name="Path 2" d="M2.953,20.5a1.743,1.743,0,0,0-2.447,0,1.7,1.7,0,0,0,0,2.422L20.276,42.5a1.743,1.743,0,0,0,2.447,0l19.77-19.575a1.7,1.7,0,0,0,0-2.422,1.744,1.744,0,0,0-2.447,0L21.5,38.353Z" transform="translate(22 17)" fill="#98ff98"/>
                 </g>
             </svg>
             </a>
 
-            <h1 id='anchor1' style={style1}>anchor</h1>
+            <h1 id='services' style={style1}>anchor</h1>
 
             <div className="services">
                 <h1 className="servicesTitle">Services</h1>
@@ -61,7 +61,7 @@ function header(){
                 </div>
             </div>
 
-            <a href="#anchor2"><svg className='arrowDown2' width="43px" height="53px">
+            <a href="#planning"><svg className='arrowDown2' width="43px" height="53px">
                 <g id="scroll-arrow-to-down" transform="translate(-22 -37)">
                     <path id="Path_2" data-name="Path 2" d="M2.953,20.5a1.743,1.743,0,0,0-2.447,0,1.7,1.7,0,0,0,0,2.422L20.276,42.5a1.743,1.743,0,0,0,2.447,0l19.77-19.575a1.7,1.7,0,0,0,0-2.422,1.744,1.744,0,0,0-2.447,0L21.5,38.353Z" transform="translate(22 17)" fill="#98ff98"/>
                 </g>
@@ -69,7 +69,7 @@ function header(){
             </a>
 
 
-            <h1 id='anchor2' style={style1}>anchor</h1>
+            <h1 id='planning' style={style1}>anchor</h1>
             <div className="planning">
                 <div className="planningTitle"><h1>Planning</h1></div>
                 <div className="planningGrid">
