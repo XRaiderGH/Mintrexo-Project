@@ -212,8 +212,9 @@ li{
 }
 
 .footer{
+  background-color: black;
+  margin-top: 2em;
   height: 6em;
-  bottom: 0;
   color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -223,6 +224,11 @@ li{
   &links{
     margin-top: 1em;
     text-align: center;
+    .privacy{
+      a:visited{
+        color: #98FF98;
+      }
+    }
   }
 }
 
@@ -245,6 +251,57 @@ li{
     margin-top: 15vh;
   }
 }
+
+.aboutOne{
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  width: 55vw;
+  color: white;
+
+  &Text{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  svg{
+    margin-right: 20px;
+    flex-grow: 1;
+    width: 750px;
+  }
+}
+
+.aboutTwo{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  width: 55vw;
+  color: white;
+
+  &Text{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  svg{
+    margin-left: 20px;
+    flex-grow: 1;
+    width: 750px;
+    g{
+      background-image: url("images/Image1.png");
+    }
+  }
+}
+
+
+
+
+
 
 @media screen and (max-width: 768px){
   .planningTitle{

@@ -166,8 +166,9 @@ li {
         width: 30%; }
 
 .footer {
+  background-color: black;
+  margin-top: 2em;
   height: 6em;
-  bottom: 0;
   color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
@@ -176,6 +177,8 @@ li {
   .footerlinks {
     margin-top: 1em;
     text-align: center; }
+    .footerlinks .privacy a:visited {
+      color: #98FF98; }
 
 @media screen and (max-width: 375px) {
   .navbarLogo {
@@ -191,6 +194,41 @@ li {
 
   .header {
     margin-top: 15vh; } }
+.aboutOne {
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  width: 55vw;
+  color: white; }
+  .aboutOneText {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em; }
+  .aboutOne svg {
+    margin-right: 20px;
+    flex-grow: 1;
+    width: 750px; }
+
+.aboutTwo {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  width: 55vw;
+  color: white; }
+  .aboutTwoText {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em; }
+  .aboutTwo svg {
+    margin-left: 20px;
+    flex-grow: 1;
+    width: 750px; }
+    .aboutTwo svg g {
+      background-image: url("images/Image1.png"); }
+
 @media screen and (max-width: 768px) {
   .planningTitle {
     margin-bottom: 5em; }
