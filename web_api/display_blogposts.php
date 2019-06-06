@@ -1,10 +1,16 @@
 <?php
+include 'config/db.php';
+
 function displayBlogposts() {
-    $obj = (object) [
-        'titel' => 'Blogpost 1',
-        'beschrijving' => 'Leuke blogpost',
-        'image_url' => 'https://google.com'
-    ];
-    return json_encode($obj);
+    return json_encode(getBlogposts());
 }
+
+function getBlogposts() {
+    global $database;
+    $sql = "SELECT * FROM blogposts";
+    $sth = $database->prepare($sql);
+    $sth->execute();
+    return ($sth->fetchAll(PDO::FETCH_ASSOC));
+}
+
 ?>
