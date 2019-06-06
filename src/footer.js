@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from './images/logo.png';
 
 
 function Footer(){
     return(
         <div className='footer'>
             <div className="footerLogo">
-                <img src="images/logo.png" alt=""/>
+                <img src={logo} alt=""/>
             </div>
             <div className="footerlinks">
                 <h5><span style={style1} className='privacy'><a href="">Privacy & Cookies</a></span> Rai Griffioen & Pim Hakkert - Mintrexo</h5>

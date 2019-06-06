@@ -1,0 +1,5 @@
+mintrexo.com/(home)
+mintrexo.com/about
+mintrexo.com/portfolio
+mintrexo.com/contact
+mintrexo.com/blog

@@ -8,7 +8,7 @@ function navbar(){
             <div className='navbarLogo'>
             </div>
             <ul className="navbarLinks">
-                <NavLink to="/" exact={'/'} style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                <NavLink to="/" exact={true} style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
                     <li>Home</li>
                 </NavLink>
                 <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
@@ -27,7 +27,7 @@ function navbar(){
             </div>
 
             <ul className="navbarLinks2">
-                <NavLink to="/" exact={'/'}  style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
+                <NavLink to="/" exact={true}  style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
                     <li>Home</li>
                 </NavLink>
                 <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
