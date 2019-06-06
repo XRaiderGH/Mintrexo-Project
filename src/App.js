@@ -5,6 +5,8 @@ import Navbar from './navbar';
 import Footer from './footer';
 import About from './about';
 import home from './home';
+import portfolio from './portfolio';
+import contact from './contact';
 
 function App() {
     return (
@@ -13,8 +15,10 @@ function App() {
                 <div className="wrapper1">
                     <Navbar/>
                     <Switch>
+                        <Route path='/portfolio' component={portfolio} />
                         <Route path='/about' component={About}/>
-                        <Route path='/' exact={'/'} component={home} />
+                        <Route path='/contact' component={contact}/>
+                        <Route path='/' exact={true} component={home} />
                     </Switch>
                     <Footer/>
                 </div>
