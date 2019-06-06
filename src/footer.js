@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './images/logo.png';
 
 
+
 function Footer(){
     return(
         <div className='footer'>

@@ -167,14 +167,36 @@ li {
         width: 30%; }
 
 .portfolio {
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin-top: -0.5em;
   height: 71.25vh;
   color: white;
   text-align: center; }
   .portfolioHeader {
-    transform: translateY(30vh); }
+    margin-top: 2em; }
   .portfolioHeaderTitle {
     color: #98FF98; }
+  .portfolioContainer {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center; }
+  .portfolioItem {
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(58, 53, 53, 0.8);
+    justify-self: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
+    .portfolioItem svg {
+      width: inherit;
+      margin-left: auto;
+      margin-right: auto; }
+    .portfolioItemTitle h1 {
+      color: #98FF98; }
 
 .footer {
   background-color: black;
