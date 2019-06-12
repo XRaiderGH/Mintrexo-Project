@@ -344,6 +344,15 @@ li {
     .aboutTwo svg g {
       background-image: url("images/Image1.png"); }
 
+.blogContainer {
+  border-radius: 5px;
+  margin: 1em auto 4em auto;
+  background-color: rgba(105, 105, 105, 0.5);
+  height: 60vh;
+  width: 85vw;
+  min-height: 500px;
+  max-width: 550px; }
+
 @media screen and (max-width: 768px) {
   .aboutOne {
     flex-direction: column;
