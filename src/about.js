@@ -27,7 +27,10 @@ function about(){
              <div className="aboutTwo">
                 <div className='aboutOneText'>
                     <h1>Pim Hakkert</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores, beatae, doloremque impedit incidunt ipsa laborum modi necessitatibus numquam odit omnis placeat praesentium recusandae repudiandae, vero voluptatem voluptates voluptatum. Quae.</p>
+                    <p>Pim Hakkert is a dedicated full stack developer. He designs and creates the back-end features on websites and assists in front-end functionality. One of his strong points is being able to create and maintain a secure and efficient back-end structure.
+                        Pim enjoys programming  websites and going to events to sharpen up his skills. <br/><br/>
+
+                        One of Pim’s favourite quote’s is: “It always seems impossible until it’s done.” – Nelson Mandela</p>
                 </div>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">

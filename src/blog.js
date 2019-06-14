@@ -4,16 +4,28 @@ import React,{useEffect, useState} from 'react';
 const Blog = () => {
 
 const[articles, setArticles] = useState([]);
-console.log(articles);
+const[search, setSearch] = useState('');
+const[query, setQuery] = useState('');
 
 useEffect( () => {
     getArticles();
-}, []);
+}, [query]);
+
+
+const updateSearch = e => {
+    setSearch(e.target.value);
+    console.log(search);
+};
+
+const getSearch = e => {
+  e.preventDefault();
+  setQuery(search);
+  console.log(search);
+};
 
 
 
-
-const getArticles = async () => await fetch('https://mintrexo.com/web_api/index.php?request=getBlogposts', {
+const getArticles = async () => await fetch('https://mintrexo.com/web_api/index.php?request=getArticles&article=' + query, {
     method: 'GET',
     headers: {
         "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
@@ -25,34 +37,49 @@ const getArticles = async () => await fetch('https://mintrexo.com/web_api/index.
     })
     .then(function(data){
         console.log(data);
-        setArticles(data.blog);
+        setArticles(data.blogpostItem);
+
     });
 
 
 return(
-    <div className="articles">
-        {articles.map(blog => (
-            <div className="blogContainer">
 
-                <div className="blogHeader">
-                    <h1>{blog.titel}</h1>
+    <div className='blogPage'>
+
+        <form onSubmit={getSearch} className='search' action="">
+            <input type="text" onChange={updateSearch}/>
+            <button type='submit'>Search</button>
+        </form>
+
+        <div className="articles">
+
+
+            {articles.map(blog => (
+                <div className="blogContainer">
+
+                    <div className="blogHeader">
+                        <h1>{blog.titel}</h1>
+                    </div>
+
+                    <div className="blogImage">
+                        <img src={blog.image_url} alt=""/>
+                    </div>
+
+                    <div className="blogContent">
+                        <p>{blog.text}</p>
+                    </div>
+
+                    <div className="blogFooter">
+                        <p>{blog.datum}</p>
+                    </div>
+
                 </div>
+            ))}
+        </div>
 
-                <div className="blogImage">
-                    <img src={blog.image_url} alt=""/>
-                </div>
-
-                <div className="blogContent">
-                    <p>{blog.text}</p>
-                </div>
-
-                <div className="blogFooter">
-                    <p>{blog.datum}</p>
-                </div>
-
-            </div>
-        ))}
     </div>
+
+
 );
 };
 
