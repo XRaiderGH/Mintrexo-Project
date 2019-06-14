@@ -33,7 +33,7 @@ function getPortfolio() {
     return ($obj);
 }
 
-function displayArticles() {
+function displayArticles($text) {
     return json_encode(getArticles($text));
 }
 
