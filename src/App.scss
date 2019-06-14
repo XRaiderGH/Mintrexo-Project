@@ -170,8 +170,8 @@ li{
   &Grid{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-row-gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-row-gap: 20em;
 
     &Items{
       display: block;
@@ -221,7 +221,7 @@ li{
   
 
   margin-top: -0.5em;
-  height: 71.25vh;
+  height: 76vh;
   color: white;
   text-align: center;
   &Header{
@@ -234,7 +234,7 @@ li{
     display: grid;
     grid-column-gap: 25px;
     grid-row-gap: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-content: center;
   }
   &Item{
@@ -242,25 +242,51 @@ li{
     padding: 15px;
     background: rgba(58, 53, 53,0.8);
     justify-self: center;
-    width: 300px;
+    width: 80vw;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    svg{
-      width: inherit;
-      margin-left: auto;
-      margin-right: auto;
+
+    img{
+      width: 100% ;
     }
+
     &Title{
       h1{
         color: #98FF98;
       }
+    }
+    &Link{
+      float: right !important;
+      display: inline-block;
+      border-radius: 10px;
+      width: 100px;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      background-color: #98FF98;
+      margin-top: 2em;
+      color: black;
+      filter: drop-shadow(0px 3px 1px black);
+      transition: all 0.05s ease-in-out;
+      a:visited{
+        color: black;
+        text-decoration: none;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+
+    }
+    &Link:hover{
+      transform: scale(0.95) translateY(4px);
+      filter: none;
     }
   }
 }
 
 .footer{
   background-color: black;
-  margin-top: 2em;
   height: 6em;
   color: white;
   display: grid;
@@ -443,15 +469,40 @@ li{
     }
   }
 }
+.articles{
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 .blogContainer{
   border-radius: 5px;
   margin: 1em auto 4em auto;
-  background-color: rgba(105, 105, 105,0.5);
-  height: 60vh;
-  width: 85vw;
+  background-color: rgba(105, 105, 105,0.6);
+  padding-bottom: 30px;
+  width: 75vw;
   min-height: 500px;
-  max-width: 550px;
+  max-width: 780px;
+  padding-top: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  .blogImage{
+    width: 100%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .blogContent{
+    color: white;
+  }
+
+  .blogFooter{
+    margin-top: 6em;
+    color: white;
+  }
 }
 
 
@@ -510,4 +561,12 @@ li{
     display: none;
   }
 
+
+}
+@media screen and (max-width: 400px) {
+
+  .footer{
+    margin-top: 3em;
+  }
+  
 }
