@@ -10,10 +10,7 @@ function getBlogposts() {
     $sql = "SELECT * FROM blogposts";
     $sth = $database->prepare($sql);
     $sth->execute();
-
-    $obj = (object) [
-        'blog' => $sth->fetchAll(PDO::FETCH_ASSOC)
-    ];
-    return ($obj);
+    return ($sth->fetchAll(PDO::FETCH_ASSOC));
 }
+
 ?>
