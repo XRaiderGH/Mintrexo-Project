@@ -1,11 +1,15 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
+function goHome() {
+    window.location = '/';
+}
+
 function navbar(){
     return(
         <div>
             <div className='navbar'>
-            <div className='navbarLogo'>
+            <div className='navbarLogo' onClick={goHome}>
             </div>
             <ul className="navbarLinks">
                 <NavLink to="/" exact={true} style={{textDecoration: 'none', color: 'inherit'}} activeClassname='active'>
