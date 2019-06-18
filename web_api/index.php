@@ -8,6 +8,8 @@ include ('display.php');
             echo (displayPortfolio());
         } elseif($_GET['request']=='getArticles' && !empty($_GET['article'])) {
             echo (displayArticles($_GET['article']));
+        } elseif($_GET['request']=='sendEmail'){
+            sendEmail($_GET['firstName'],$_GET['lastName'],$_GET['email'],$_GET['subject'],$_GET['message']);
         } else {
             echo 'API ERROR: Wrong request';
         }

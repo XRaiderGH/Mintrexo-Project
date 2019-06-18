@@ -1,5 +1,6 @@
 <?php
 include 'config/db.php';
+include 'mailer.php';
 
 function displayBlogposts() {
     return json_encode(getBlogposts());
@@ -38,11 +39,17 @@ function displayArticles($text) {
 }
 
 function getArticles($text) {
-    $database = dbConnect();
+    global $database;
     $text = htmlspecialchars($text);
     $get_article = $database->prepare("SELECT * FROM blogposts WHERE titel LIKE concat('%' :titel, '%')");
     $get_article->execute(array('titel' => $text));
-    $results = $get_article->fetchAll(PDO::FETCH_ASSOC);
-    return $results;
+    $obj = (object) [
+        'blogpostItem' => $get_article->fetchAll(PDO::FETCH_ASSOC)
+    ];
+    return $obj;
+}
+
+function sendEmail($firstName, $lastName, $sender, $subject, $text) {
+    sendEmailFunc($firstName, $lastName, $sender, $subject, $text);
 }
 ?>
