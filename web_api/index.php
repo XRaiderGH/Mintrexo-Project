@@ -11,9 +11,9 @@ include ('display.php');
         } elseif($_GET['request']=='sendEmail'){
             sendEmail($_GET['firstName'],$_GET['lastName'],$_GET['email'],$_GET['subject'],$_GET['message']);
         } else {
-            echo 'API ERROR: Wrong request';
+            echo json_encode('API ERROR: Wrong request');
         }
     } else {
-        echo 'API ERROR: Wrong method';
+        echo json_encode('API ERROR: Wrong method');
     }
 ?>
