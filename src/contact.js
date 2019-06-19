@@ -3,11 +3,7 @@ import React from 'react';
 
 function contact() {
 
-    let formfirstName = document.getElementById('formFirstName');
-    let formlastName = document.getElementById('formLastName');
-    let formemail = document.getElementById('formEmail');
-    let formsubject = document.getElementById('formSubject');
-    let formmessage = document.getElementById('formMessage');
+
 
 
 
@@ -15,9 +11,15 @@ function contact() {
          e.preventDefault();
          console.log('test');
 
+         let formfirstName = document.getElementById('formFirstName').value;
+         let formlastName = document.getElementById('formLastName').value;
+         let formemail = document.getElementById('formEmail').value;
+         let formsubject = document.getElementById('formSubject').value;
+         let formmessage = document.getElementById('formMessage').value;
 
 
-         const exampleFetch2 = async () => fetch('https://mintrexo.com/web_api/index.php?request=sendEmail?firstName=' + formfirstName.value +'&' + formlastName.value +'&' + formemail.value +'&' + formsubject.value +'&' + formmessage.value , {
+
+         const exampleFetch2 = async () => fetch('https://mintrexo.com/web_api/index.php?request=sendEmail&firstName=' + formfirstName +'&lastName=' + formlastName +'&email=' + formemail +'&subject=' + formsubject +'&message=' + formmessage , {
              method: 'GET',
              headers: {
                  "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
@@ -39,7 +41,7 @@ function contact() {
         <div className='contact'>
             <h1 className={'title'}>Contact</h1>
             <div className="formContainer">
-                <form onSubmit={sendData} action="" className="contactForm">
+                <form action="" className="contactForm">
                     First name <br/>
                     <input id='formFirstName' type="text" className="formFirstname"/><br/>
                     Last name <br/>
@@ -49,7 +51,9 @@ function contact() {
                     Subject <br/>
                     <input id='formSubject' type="text" className="formSubject"/><br/>
                     Message <br/>
-                    <textarea id='formMessage' name="" id="" cols="30" rows="10" className='formMessage'/>
+                    <textarea id='formMessage' name=""  cols="30" rows="10" className='formMessage'>
+
+                    </textarea>
                     <button type="button" onClick={sendData} value={'Send'} className={'formSubmit'}>Send</button>
                 </form>
             </div>
