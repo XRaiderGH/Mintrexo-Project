@@ -170,8 +170,8 @@ li{
   &Grid{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-row-gap: 20em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 2em;
 
     &Items{
       display: block;
@@ -408,7 +408,7 @@ li{
 
 
   .navbarLogo{
-    background-image: url("images/logo.png");
+    background-image: url("images/Logo2.svg");
     background-position: center top;
     background-size: 15em;
   }
