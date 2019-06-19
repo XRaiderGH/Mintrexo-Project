@@ -1,4 +1,8 @@
 import React from 'react';
+import design from './images/design.png';
+import development from './images/development.png';
+import evaluation from './images/evaluation.png';
+import publish from './images/publish.png';
 
 function header(){
     return(
@@ -198,54 +202,41 @@ function header(){
                             <h1>1. Content and Design</h1>
                             <p>In this phase we discuss the design and content of your site.</p>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="123.544" height="123.544" viewBox="0 0 123.544 123.544">
-                            <g id="Ellipse_4" data-name="Ellipse 4" fill="#fff" stroke="#707070" strokeWidth="1">
-                                <ellipse cx="61.772" cy="61.772" rx="61.772" ry="61.772" stroke="none"/>
-                                <ellipse cx="61.772" cy="61.772" rx="61.272" ry="61.272" fill="none"/>
-                            </g>
-                        </svg>
+                        <div class="planningContentDiv">
+                            <img src={design} alt="Design icon"/>
+                        </div>
                     </div>
 
                     <div className="planningGridItem">
                         <div className='planningContent'>
                             <h1>2. Development</h1>
-                            <p>In this step we develop your site according to the specifications
+                            <p>In this step we create your site according to the specifications
                                 agreed upon.</p>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="123.544" height="123.544" viewBox="0 0 123.544 123.544">
-                            <g id="Ellipse_4" data-name="Ellipse 4" fill="#fff" stroke="#707070" strokeWidth="1">
-                                <ellipse cx="61.772" cy="61.772" rx="61.772" ry="61.772" stroke="none"/>
-                                <ellipse cx="61.772" cy="61.772" rx="61.272" ry="61.272" fill="none"/>
-                            </g>
-                        </svg>
+                        <div className="planningContentDiv">
+                            <img src={development} alt="Design icon"/>
+                        </div>
                     </div>
 
                     <div className="planningGridItem">
                         <div className='planningContent'>
                             <h1>3. Evaluation and Polishing</h1>
-                            <p>We discuss the looks of the product to make sure you are happy with our design
-                                decisions.</p>
+                            <p>We evaluate the product to make sure you are happy with the product.</p>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="123.544" height="123.544" viewBox="0 0 123.544 123.544">
-                            <g id="Ellipse_4" data-name="Ellipse 4" fill="#fff" stroke="#707070" strokeWidth="1">
-                                <ellipse cx="61.772" cy="61.772" rx="61.772" ry="61.772" stroke="none"/>
-                                <ellipse cx="61.772" cy="61.772" rx="61.272" ry="61.272" fill="none"/>
-                            </g>
-                        </svg>
+                        <div className="planningContentDiv">
+                            <img src={evaluation} alt="Design icon"/>
+                        </div>
                     </div>
 
                     <div className="planningGridItem">
                         <div className='planningContent'>
                             <h1>4. Publishing</h1>
-                            <p>Here we publish your site to the web and give you the
-                                site information and everything you need to use your site.</p>
+                            <p>In the last step we publish the website to the internet and provide you with
+                            any details you might require.</p>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="123.544" height="123.544" viewBox="0 0 123.544 123.544">
-                            <g id="Ellipse_4" data-name="Ellipse 4" fill="#fff" stroke="#707070" strokeWidth="1">
-                                <ellipse cx="61.772" cy="61.772" rx="61.772" ry="61.772" stroke="none"/>
-                                <ellipse cx="61.772" cy="61.772" rx="61.272" ry="61.272" fill="none"/>
-                            </g>
-                        </svg>
+                        <div className="planningContentDiv">
+                            <img id="cloudIcon" src={publish} alt="Design icon"/>
+                        </div>
                     </div>
                 </div>
             </div>

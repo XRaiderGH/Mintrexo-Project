@@ -206,12 +206,25 @@ li{
       .planningContent{
         width: 70%;
       }
-      svg{
-        width: 30%;
+      .planningContentDiv {
+        width: 123px;
+        height: 123px;
+        border-radius: 50%;
+        background-color: white;
+        img {
+          transform: translate(20px,14px);
+          width: 85px;
+          height: 85px;
+        }
       }
-
     }
   }
+}
+
+#cloudIcon {
+  width: 100px;
+  height: 100px;
+  transform: translate(12px,13px);
 }
 
 .portfolio{
@@ -236,6 +249,7 @@ li{
     grid-row-gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-content: center;
+    margin-bottom: 50px;
   }
   &Item{
     border-radius: 10px;
