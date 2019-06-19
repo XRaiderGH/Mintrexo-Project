@@ -465,9 +465,16 @@ li {
 }
 
 .articles {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
   height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.articles::-webkit-scrollbar {
+  width: 0;
 }
 
 .blogContainer {
@@ -548,7 +555,6 @@ li {
 }
 .blogPage {
   width: 100vw;
-  height: 100%;
 }
 
 .searchContainer {
@@ -562,7 +568,7 @@ form.search .searchText {
   border-style: solid;
   border-width: 2px;
   border-right-color: black;
-  width: 30vw;
+  width: 70vw;
   max-width: 500px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -570,9 +576,9 @@ form.search .searchText {
   border-bottom-left-radius: 10px;
 }
 form.search .searchButton {
-  background-color: white;
+  background-color: #98FF98;
   border-color: #98FF98;
-  border-left-color: black;
+  border-left-color: #98FF98;
   border-style: solid;
   border-width: 2px;
   padding-top: 0.5em;
@@ -595,4 +601,4 @@ form.search .searchButton:hover {
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */
