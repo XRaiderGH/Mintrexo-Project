@@ -364,9 +364,15 @@ li {
       background-image: url("images/Image1.png"); }
 
 .articles {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
   height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden; }
+
+.articles::-webkit-scrollbar {
+  width: 0; }
 
 .blogContainer {
   border-radius: 5px;
@@ -430,8 +436,7 @@ li {
   .planningGrid {
     width: 90vw; } }
 .blogPage {
-  width: 100vw;
-  height: 100%; }
+  width: 100vw; }
 
 .searchContainer {
   margin-bottom: 2em;
@@ -443,16 +448,16 @@ form.search .searchText {
   border-style: solid;
   border-width: 2px;
   border-right-color: black;
-  width: 30vw;
+  width: 70vw;
   max-width: 500px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; }
 form.search .searchButton {
-  background-color: white;
+  background-color: #98FF98;
   border-color: #98FF98;
-  border-left-color: black;
+  border-left-color: #98FF98;
   border-style: solid;
   border-width: 2px;
   padding-top: 0.5em;
