@@ -54,7 +54,7 @@ function contact() {
                     <textarea id='formMessage' name=""  cols="30" rows="10" className='formMessage'>
 
                     </textarea>
-                    <button type="button" onClick={sendData} value={'Send'} className={'formSubmit'}>Send</button>
+                    <button class="formSubmit" type="button" onClick={sendData} value={'Send'} className={'formSubmit'}>Send</button>
                 </form>
             </div>
         </div>
