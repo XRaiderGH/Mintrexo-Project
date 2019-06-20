@@ -510,8 +510,8 @@ li{
 .blogContainer{
   border-radius: 5px;
   margin: 0 auto 4em auto;
-  background-color: rgba(105, 105, 105,0.6);
-  padding-bottom: 30px;
+  background-color: rgba(105, 105, 105,0.65);
+  padding-bottom: 25px;
   width: 75vw;
   min-height: 500px;
   max-width: 780px;
@@ -528,11 +528,15 @@ li{
   }
 
   .blogContent{
+    font-family: sans-serif;
     color: white;
+    font-size: 1.2em;
+    line-height: 26px;
   }
 
   .blogFooter{
-    margin-top: 6em;
+    font-size: 1.1em;
+    margin-top: 3em;
     color: white;
   }
 }
