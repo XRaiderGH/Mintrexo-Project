@@ -9,7 +9,6 @@ function contact() {
 
      const sendData = e => {
          e.preventDefault();
-         console.log('test');
 
          let formfirstName = document.getElementById('formFirstName').value;
          let formlastName = document.getElementById('formLastName').value;
