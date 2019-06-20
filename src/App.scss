@@ -390,6 +390,9 @@ li{
         border-radius: 5px;
         border-color: #98FF98;
         box-shadow: none;
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
 
