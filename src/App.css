@@ -307,6 +307,8 @@ li {
         border-radius: 5px;
         border-color: #98FF98;
         box-shadow: none; }
+        .contact .formContainer form .formSubmit:hover {
+          cursor: pointer; }
 
 @media screen and (max-width: 414px) {
   .planning {
