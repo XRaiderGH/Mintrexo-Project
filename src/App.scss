@@ -340,13 +340,17 @@ li{
     height: 60vh;
     width: 85vw;
     min-height: 500px;
-    max-height: 300px;
+    max-height: 517px;
     max-width: 550px;
 
     form{
       transform: translateX(-1%);
       padding: 2em;
       justify-content: center;
+      #message{
+        margin-top: 2em;
+        color: #98FF98;
+      }
       input{
         height: 2em;
         margin-top: 0.5em;
@@ -384,6 +388,7 @@ li{
         margin: 1.5em -14px 0 0em;
         float: right;
         width: 80px;
+        height: 40px;
         background-color: #98FF98;
         text-align: center;
         border-style: solid;

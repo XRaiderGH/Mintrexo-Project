@@ -16,6 +16,7 @@ function contact() {
          let formemail = document.getElementById('formEmail').value;
          let formsubject = document.getElementById('formSubject').value;
          let formmessage = document.getElementById('formMessage').value;
+         let successMessage = document.getElementById('message');
 
 
 
@@ -29,7 +30,8 @@ function contact() {
                  return response.json();
              })
              .then(function(data){
-                 console.log(data)
+                 console.log(data);
+                 successMessage.innerHTML = "Message Sent";
              });
 
 
@@ -55,6 +57,7 @@ function contact() {
 
                     </textarea>
                     <button class="formSubmit" type="button" onClick={sendData} value={'Send'} className={'formSubmit'}>Send</button>
+                    <div id="message"> </div>
                 </form>
             </div>
         </div>
