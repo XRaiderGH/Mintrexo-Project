@@ -10,7 +10,7 @@ function Footer(){
                 <img src={logo} alt=""/>
             </div>
             <div className="footerlinks">
-                <h5><span style={style1} className='privacy'><a href="http://mintrexo.com/legal/Privacyverklaring_privacystatement.pdf">Privacy & Cookies</a></span> Rai Griffioen & Pim Hakkert - Mintrexo</h5>
+                <h5><span style={style1} className='privacy'><a href="http://mintrexo.com/legal/Privacyverklaring_privacystatement.pdf" target="_blank">Privacy & Cookies</a></span> Rai Griffioen & Pim Hakkert - Mintrexo</h5>
             </div>
         </div>
     );
