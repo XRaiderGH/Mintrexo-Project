@@ -39,8 +39,9 @@ const Blog = () => {
         })
         .then(function (data) {
             console.log(data);
-            setArticles(data.blogpostItem);
-
+            if(data!=='API ERROR: Wrong request') {
+                setArticles(data.blogpostItem);
+            }
         });
 
     const getArticles2 = async () => await fetch('https://mintrexo.com/web_api/index.php?request=getBlogposts', {
