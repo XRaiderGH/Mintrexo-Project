@@ -40,18 +40,26 @@ function contact() {
 
     return (
         <div className='contact'>
+
             <h1 className={'title'}>Contact</h1>
             <div className="formContainer">
+                <div className={'companyInfo'}>
+                    <h3>Mintrexo Webdesign</h3>
+                    <h4>KVK number: 75015579</h4>
+                    <h4>VAT number: NL860109756B01</h4>
+                    <h4>Address: Gravin Juliana van Stolberglaan 373, 2263AH Leidschendam, Netherlands</h4>
+                    <h4>Email: info@mintrexo.com</h4>
+                </div>
                 <form action="" className="contactForm">
-                    First name <br/>
-                    <input id='formFirstName' type="text" className="formFirstname"/><br/>
-                    Last name <br/>
-                    <input id='formLastName' type="text" className="formLastname"/><br/>
-                    E-mail <br/>
-                    <input id='formEmail' type="text" className="formEmail"/><br/>
-                    Subject <br/>
-                    <input id='formSubject' type="text" className="formSubject"/><br/>
-                    Message <br/>
+                    <label htmlFor="formFirstName">First name</label>
+                    <input id='formFirstName' type="text" className="formFirstname"/>
+                    <label htmlFor="formLastname">Last name</label>
+                    <input id='formLastName' type="text" className="formLastname"/>
+                    <label htmlFor="formEmail">Email</label>
+                    <input id='formEmail' type="text" className="formEmail"/>
+                    <label htmlFor="formSubject">Subject</label>
+                    <input id='formSubject' type="text" className="formSubject"/>
+                    <label htmlFor="formMessage">Message</label>
                     <textarea id='formMessage' name=""  cols="30" rows="10" className='formMessage'>
 
                     </textarea>

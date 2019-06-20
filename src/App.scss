@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@media only screen and (min-width: 768px) {
+  .aboutDiv {
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(105, 105, 105,0.7);
+  }
+  .aboutTwo {
+    margin-top: 50px;
+  }
+}
+
+.companyInfo {
+  font-weight: 400;
+  padding-top: 1px;
+  margin-left: 25px;
+  h4 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: lighter;
+  }
+}
+
 html{
   width: 100vw;
   background-color: black;
@@ -202,6 +226,7 @@ li{
     display: flex;
     flex-direction: column;
     &Item{
+      justify-content: space-evenly;
       display: flex;
       margin-bottom: 5em;
       .planningContent{
@@ -332,18 +357,17 @@ li{
   .title{
     color: #98FF98;
     text-align: center;
-    margin-bottom: 3.3em;
+    margin-bottom: 1.5em;
   }
   color: #FFFFFF;
   .formContainer{
-
     border-radius: 5px;
-    margin: 1em auto 4em auto;
-    background-color: rgba(105, 105, 105,0.5);
-    height: 60vh;
+    margin: 20px auto 4em auto;
+    background-color: rgba(105, 105, 105,0.6);
+    height: 700px;
     width: 85vw;
     min-height: 500px;
-    max-height: 517px;
+    max-height: 800px;
     max-width: 550px;
 
     form{
@@ -356,7 +380,8 @@ li{
       }
       input{
         height: 2em;
-        margin-top: 0.5em;
+        margin-top: 0.1em;
+        margin-bottom: 1em;
         width: calc(100% - 5px);
         padding-left: 10px;
         max-width: calc(100% - 7px);
@@ -513,7 +538,7 @@ li{
 .blogContainer{
   border-radius: 5px;
   margin: 0 auto 4em auto;
-  background-color: rgba(105, 105, 105,0.65);
+  background-color: rgba(105, 105, 105,0.7);
   padding-bottom: 25px;
   width: 75vw;
   min-height: 500px;
@@ -552,8 +577,13 @@ li{
 @media screen and (max-width: 768px){
 
   .aboutOne{
+    background-color: rgba(105,105,105,0.7);
     flex-direction: column;
-    width: 90vw;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 85vw;
     svg{
       order: 0;
       width: auto;
@@ -562,8 +592,14 @@ li{
     }
   }
   .aboutTwo{
+    margin-top: 50px;
+    background-color: rgba(105,105,105,0.7);
     flex-direction: column;
-    width: 90vw;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 85vw;
     svg{
       order: -1;
       width: auto;
