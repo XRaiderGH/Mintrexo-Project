@@ -79,7 +79,7 @@ const Blog = () => {
 
 
                 {articles.map(blog => (
-                    <div className="blogContainer">
+                    <div key={blog.titel} className="blogContainer">
 
                         <div className="blogHeader">
                             <h1>{blog.titel}</h1>

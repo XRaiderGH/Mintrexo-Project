@@ -1,5 +1,3 @@
-import Image2 from "./images/profilepic.jpg";
-import image1 from './images/Image1.png';
 import React, {useEffect, useState} from 'react';
 
 

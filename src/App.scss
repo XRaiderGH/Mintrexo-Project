@@ -459,9 +459,12 @@ li{
     margin-top: -0.75em;
   }
 
+  .formContainer{
+    padding-bottom: 2em;
+  }
+
 
   .navbarLogo{
-    background-image: url("images/Logo2.svg");
     background-position: center top;
     background-size: 15em;
   }
@@ -540,7 +543,6 @@ li{
   margin: 0 auto 4em auto;
   background-color: rgba(105, 105, 105,0.7);
   padding-bottom: 25px;
-  width: 75vw;
   min-height: 500px;
   max-width: 780px;
   padding-top: 20px;

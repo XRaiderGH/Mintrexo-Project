@@ -202,7 +202,7 @@ function header(){
                             <h1>1. Content and Design</h1>
                             <p>In this phase we discuss the design and content of your site.</p>
                         </div>
-                        <div class="planningContentDiv">
+                        <div className="planningContentDiv">
                             <img src={design} alt="Design icon"/>
                         </div>
                     </div>
