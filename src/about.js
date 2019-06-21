@@ -6,7 +6,7 @@ function about(){
     return(
         <div className={'about'}>
 
-            <div className="aboutOne">
+            <div className="aboutOne aboutDiv">
                 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
                     <defs>
                         <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="100%" width="100%">
@@ -24,7 +24,7 @@ function about(){
                 </div>
             </div>
 
-             <div className="aboutTwo">
+             <div className="aboutTwo aboutDiv">
                 <div className='aboutOneText'>
                     <h1>Pim Hakkert</h1>
                     <p>Pim Hakkert is a dedicated full stack developer. He designs and creates the back-end features on websites and assists in front-end functionality. One of his strong points is being able to create and maintain a secure and efficient back-end structure.
