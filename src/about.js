@@ -20,7 +20,10 @@ function about(){
                 </svg>
                 <div className='aboutOneText'>
                     <h1>Rai Griffioen</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores, beatae, doloremque impedit incidunt ipsa laborum modi necessitatibus numquam odit omnis placeat praesentium recusandae repudiandae, vero voluptatem voluptates voluptatum. Quae.</p>
+                    <p>"In the ideal situation, you'll neither want to be the smartest nor the dumbest in the room. Find a balance between those. Find a way to provide, and to learn"<br/><br/>
+                    "I like this phrase because it really does make sense to me. If you find this balance you'll be able to learn from others, while at the same time others will also have the opportunity to learn from you."
+                        - Rai Griffioen Designer and Front-end Developer
+                    </p>
                 </div>
             </div>
 
