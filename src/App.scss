@@ -32,6 +32,8 @@ html{
 body, html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   width: 100vw;
   margin: 0;
@@ -258,6 +260,7 @@ li{
 .portfolio{
 
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   
 
@@ -531,6 +534,7 @@ li{
   margin-right: auto;
   height: 80vh;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 
 }

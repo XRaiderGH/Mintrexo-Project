@@ -25,6 +25,8 @@ html {
 body, html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 100vw;
   margin: 0;
   font-family: 'Quicksand', sans-serif; }
@@ -202,6 +204,7 @@ li {
 
 .portfolio {
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   margin-top: -0.5em;
   height: 76vh;
@@ -415,6 +418,7 @@ li {
   margin-right: auto;
   height: 80vh;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden; }
 
 .articles::-webkit-scrollbar {
