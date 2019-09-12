@@ -17,8 +17,6 @@ function contact() {
          let formmessage = document.getElementById('formMessage').value;
          let successMessage = document.getElementById('message');
 
-
-
          const exampleFetch2 = async () => fetch('https://mintrexo.com/web_api/index.php?request=sendEmail&firstName=' + formfirstName +'&lastName=' + formlastName +'&email=' + formemail +'&subject=' + formsubject +'&message=' + formmessage , {
              method: 'GET',
              headers: {
